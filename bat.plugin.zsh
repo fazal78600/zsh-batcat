@@ -7,6 +7,6 @@ if type bat > /dev/null; then
   mkdir -p "$HOME/bin"
   ! [[ -f "$HOME/bin/cat" ]] && ln -s "$(command -v bat)" "$HOME/bin/cat"
 else
-  echo "Error: Please install bat before loading ZSH plugin"
+  echo "Error: Please install bat before loading ZSH plugin" >&2
 fi
 
